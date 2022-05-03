@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="./images/logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="./images/cart.png" width="30px" height="30px" alt=""></a>
+                <img src="./images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Products</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <a href="products-details.html"><img src="./images/product-8.jpg" alt=""></a>
+                    <div>
+                        <a href="products-details.html"><p>Collar Sweatshirt</p></a>
+                        <small>Price: Rs 1499.00</small><br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1">
+            <td>Rs 1499.00</td></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                   <img src="./images/product-9.jpg" alt="">
+                    <div>
+                       <p>Shirt w/ Hijab</p>
+                        <small>Price: Rs 399.00</small><br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1">
+            <td>Rs 399.00</td></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="./images/product-3.jpg" alt="">
+                    <div>
+                        <p>Polka Dot Kurti Set</p>
+                        <small>Price: Rs 1249.00</small><br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1">
+            <td>Rs 1249.00</td></td>
+        </tr>
+    </table>
+
+
+<div class="total-price">
+    <table>
+        <tr>
+            <td>Subtotal</td>
+            <td>Rs 3147.00</td>
+        </tr>
+        <tr>
+            <td>Tax</td>
+            <td>Rs 512.00</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>Rs 3659.00</td>
+        </tr>
+        <tr>
+            <td><a href="" class="btn">Pay and Order</a></td>
+        </tr>
+    </table>
+</div>
+
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <div class="app-logo">
+                    <img src="./images/play-store.png" alt="">
+                    <img src="./images/app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="./images/logo.png" alt="">
+                <p>Our purpose Is To Give Our Customers The Feeling Of<br> Main Character.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <a class="footer-link" href=""><li>Coupons</li></a>
+                    <a class="footer-link" href=""><li>Blog Post</li></a>
+                    <a class="footer-link" href=""><li>Return Policy</li></a>
+                    <a class="footer-link" href=""><li>Join Affiliate</li></a>
+                </ul>
+            </div>
+            <div class="footer-col41">
+                <h3>Social Media</h3>
+                <ul>
+                  <a class="footer-link" href=""><li>LinkedIn</li></a>
+                  <a class="footer-link" href=""><li>Facebook</li></a>
+                  <a class="footer-link" href=""><li>Instagram</li></a>
+                  <a class="footer-link" href=""><li>Twitter</li></a>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© 2022 GazeIn</p>
+    </div>
+</div>
+
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px"
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
