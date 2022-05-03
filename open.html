@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collar Sweatshirt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="head">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="./images/logo.png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="./images/cart.png" width="30px" height="30px" alt=""></a>
+        <img src="./images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    </div>
+
+
+        <div class="row">
+          <div class="col-7-img">
+            <img src="./images/product-8.jpg" width=450 height=450>
+          </div>
+        <div class="col-2">
+            <center>
+          <h6 class="head1">Home/ Mens/ Formals</h6>
+          <h1><strong>Collar Sweatshirt</strong></h1>
+          <h2>Rs 1499.00</h2>
+          <select>
+            <option>Select Size</option>
+            <option>XS </option>
+            <option>S</option>
+            <option>M</option>
+            <option>L </option>
+            <option>XL</option>
+            <option>XXl</option>
+          </select>
+
+          <a href="cart.html" class="btn">Add To Cart</a>
+          <a href="" class="btn">Wishlist</a>
+
+          <h5 class="head1">Product Deatils:</h5>
+          <h4>Its a brown collor sweatshirt. It's cozy and warm. Can fit in well.</h4>
+          </center>
+        </div>
+      </div>
+
+      <section class="sproducts">
+      <br><br><hr><br><br><h2 class="title">Similar Products</h2><br>
+                  <button><a href="/"><img src="./images/product-3.jpg" width=230 height="230"></a></button>
+                  <button><a href="/"><img src="./images/Women/Western/W4.jpg" width=230 height="230"></a></button>
+                  <button><a href="/"><img src="./images/Women/Western/W3.jpg" width=230 height="230"></a></button>
+          </section>
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <div class="app-logo">
+                        <img src="./images/play-store.png" alt="">
+                        <img src="./images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="./images/logo.png" alt="">
+                    <p>Our purpose Is To Give Our Customers The Feeling Of<br> Main Character.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <a class="footer-link" href=""><li>Coupons</li></a>
+                        <a class="footer-link" href=""><li>Blog Post</li></a>
+                        <a class="footer-link" href=""><li>Return Policy</li></a>
+                        <a class="footer-link" href=""><li>Join Affiliate</li></a>
+                    </ul>
+                </div>
+                <div class="footer-col41">
+                    <h3>Social Media</h3>
+                    <ul>
+                      <a class="footer-link" href=""><li>LinkedIn</li></a>
+                      <a class="footer-link" href=""><li>Facebook</li></a>
+                      <a class="footer-link" href=""><li>Instagram</li></a>
+                      <a class="footer-link" href=""><li>Twitter</li></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">© 2022 GazeIn</p>
+        </div>
+    </div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px"
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
